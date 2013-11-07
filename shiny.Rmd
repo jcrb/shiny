@@ -12,5 +12,17 @@ En mode local, ces librairies sont automatiquement (et implicitement) accessible
 
 ```{r init}
 library("shiny")
-runExample("01_hello")
+# runExample("01_hello")
 ```
+
+Application Shiny elementaire
+-----------------------------
+
+- creer un nouveau repertoire *shinyapp*
+- y creer 2 fichiers obligatoires
+  - ui.R contient les elements de l'interface
+    - un titre (headerPanel)
+    - une zone de menu (sidebarPanel)
+    - une zone d'affichage (mainPanel)
+  - server.R partie serveur
+- lancer l'application avec **runApp("shinyapp")**
