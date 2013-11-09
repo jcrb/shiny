@@ -1,0 +1,23 @@
+RCharts
+========================================================
+
+Essai de RCharts
+
+source: http://ramnathv.github.io/rCharts/
+
+Necessite l'installation de R-RCurl et devtools
+
+```{r}
+library("rCharts")
+library("ggplot2")
+data(economics, package = "ggplot2")
+econ <- transform(economics, date = as.character(date))
+m1 <- mPlot(x = "date", y = c("psavert", "uempmed"), type = "Line", data = econ)
+# affine la taille des points et des lignes
+m1$set(pointSize = 0, lineWidth = 1)
+# cree le script a afficher
+m1$print("chart2")
+# ouvre dans une page HTML
+m1
+```
+

@@ -1,0 +1,45 @@
+presentation
+========================================================
+author: JCB
+date: Montreal Novembre 2013
+transition: rotate
+
+Preambule
+========================================================
+type: alert
+
+Essai du mode Presentation de RStudio  
+Note: necessite la version 0.98 de RStudio
+- utilise la syntaxe de **Markdown**
+
+First Slide
+========================================================
+
+For more details on authoring R presentations click the
+**Help** button on the toolbar.
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
+Boxplot
+========================================================
+
+```{r boxplot,echo=FALSE}
+boxplot(cars,col=c("yellow","green"))
+
+```
+
