@@ -5,7 +5,7 @@ Exploration du package **shiny**
 
 Shiny permet la creation de page web interactives a partir de R.
 
-L'installation de la libreairie cree un dossier shiny dans le repertoire R. Le sous dossier *www/shared* contient les applications javascript necessaires, notamment
+L'installation de la librairie cree un dossier shiny dans le repertoire R. Le sous dossier *www/shared* contient les applications javascript necessaires, notamment
 - jquery.js
 - shiny.js
 En mode local, ces librairies sont automatiquement (et implicitement) accessibles.
@@ -18,11 +18,12 @@ library("shiny")
 Application Shiny elementaire
 -----------------------------
 
-- creer un nouveau repertoire *shinyapp*
-- y creer 2 fichiers obligatoires
-  - ui.R contient les elements de l'interface
+- creer manuellement un nouveau repertoire *shinyapp* (on peut choisir le titre qu'on veut)
+- y creer (manuellement) 2 fichiers obligatoires:
+  - ui.R qui contiendra les elements de l'interface
     - un titre (headerPanel)
     - une zone de menu (sidebarPanel)
     - une zone d'affichage (mainPanel)
   - server.R partie serveur
+  
 - lancer l'application avec **runApp("shinyapp")**

@@ -1,0 +1,48 @@
+Title
+========================================================
+
+Les contrôles utilisent le principe du couple "nom,valeur"
+Checkbox Input Control
+======================
+Description
+-----------
+Crée une boite a cocher .
+
+Usage
+-----
+checkboxInput(inputId, label, value = FALSE)
+checkboxInput("outliers", "Données aberrantes", FALSE)
+
+Arguments
+---------
+inputId   nom de la variable qui stocke la valeur du controle.
+
+label	    valeur qui apparait à l'affichage.
+
+value	    valeur initiale (TRUE or FALSE).
+
+
+select list input control
+=========================
+Description
+-----------
+Crée une liste de sélection pour choisir un ou plusieurs items dans une liste.
+
+Usage
+-----
+selectInput(inputId, label, choices, selected = NULL, multiple = FALSE)
+selectInput("variable", "Variable:", list("Cylindres" = "cyl", "Transmission" = "am", "Engrenages" = "gear"))
+
+Arguments
+---------
+inputId	  Input variable to assign the control's value to
+
+label	    Display label for the control
+
+choices	  Liste des valeurs à selectionner. Si les éléments de la liste sont nommés alors le       nom est utilisé à la place de la valeur.
+
+selected	Nom de l'itemsélectionné par défaut (or multiple names if multiple = TRUE). S'il n'est pas précisé alors le premier item est sélectioné ou aucun en cas de choix multiple.
+
+multiple	Is selection of multiple items allowed?
+
+
