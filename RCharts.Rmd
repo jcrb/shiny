@@ -20,4 +20,10 @@ m1$print("chart2")
 # ouvre dans une page HTML
 m1
 ```
-
+Utilisation pour RESURAL
+========================
+Le fichier HTML produit peut être chargé dans le site Resural et fonctionne. Application avec la presentation de demo. 
+- ouvrir Resural en mode edition
+- utiliser *outils/gestionnaire* de document pour telecharger le fichier *.HTML*
+- dans l'onglet *ORUDAL* on cree une nouvelle box de type texte. On y ajoute un mot avec un lien vers le fichier HTML.
+- valider et cliquer sur le lien
